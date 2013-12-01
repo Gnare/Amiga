@@ -80,7 +80,6 @@ public class SelectionFragment extends Fragment {
 	                        R.id.selection_list, listElements));
 	    
 
-
 	    // Check for an open session
 	    Session session = Session.getActiveSession();
 	    

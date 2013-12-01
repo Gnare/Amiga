@@ -30,11 +30,25 @@
             android:textSize="18sp" />
 	</LinearLayout>
 	
+    <Button
+            android:id="@+id/btnCurtiu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:text="Curtiu ?" />
+
+        <Button
+            android:id="@+id/btnQual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:text="Qual ?" />
+    
     <ListView
         android:id="@+id/selection_list"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:background="@drawable/button_border"/>    
+        android:background="@drawable/button_border"/>
 
 </LinearLayout>

@@ -8,11 +8,12 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 import com.facebook.Session;
 import com.facebook.SessionState;
 import com.facebook.UiLifecycleHelper;
-
 
 public class MainActivity extends FragmentActivity  {	
 
@@ -34,7 +35,7 @@ public class MainActivity extends FragmentActivity  {
 	    super.onCreate(savedInstanceState);
 	    
 	    uiHelper = new UiLifecycleHelper(this, callback);
-	    uiHelper = new UiLifecycleHelper(this, callback);
+	    
 	    uiHelper.onCreate(savedInstanceState);
 	    
 	    setContentView(R.layout.activity_main);
@@ -48,6 +49,17 @@ public class MainActivity extends FragmentActivity  {
 	        transaction.hide(fragments[i]);
 	    }
 	    transaction.commit();
+	    
+	    
+	    Button button1 = (Button)findViewById(R.id.btnCurtiu);			
+		 button1.setOnClickListener(new View.OnClickListener() {
+		      @Override
+		      public void onClick(View view) {
+		        Intent intent = new Intent(MainActivity.this, FotoCurtiuActivity.class);
+		        startActivity(intent);
+		      }
+		 });
+	    
 	}
 	
 	private boolean isResumed = false;
