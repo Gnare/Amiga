@@ -16,5 +16,7 @@
     <string name="multiple_users_selected">%1$s and %2$s others</string>
     <string name="title_activity_mensagem_escolha">MensagemEscolha</string>
     <string name="title_activity_foto_curtiu">FotoCurtiu</string>
+    <string name="title_activity_escolhe_amigos">EscolheAmigosActivity</string>
+    <string name="title_activity_compartilhar">CompartilharActivity</string>
 
 </resources>

@@ -41,6 +41,10 @@
             android:name="br.com.jtron.amigafb.FotoCurtiuActivity"
             android:label="@string/title_activity_foto_curtiu" >
         </activity>
+        <activity
+            android:name="br.com.jtron.amigafb.CompartilharActivity"
+            android:label="@string/title_activity_compartilhar" >
+        </activity>
     </application>
 
 </manifest>
