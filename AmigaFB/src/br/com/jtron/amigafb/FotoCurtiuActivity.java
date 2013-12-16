@@ -60,7 +60,8 @@ public class FotoCurtiuActivity extends Activity {
 	        add_btn.setOnClickListener(new View.OnClickListener() {
 	   		      @Override
 	   		      public void onClick(View view) {		        		    	  		    	  		    	
-	   		    	//startPickerActivity(PickerActivity.FRIEND_PICKER, getRequestCode());	   		    	  
+	   		    	Intent intent = new Intent(FotoCurtiuActivity.this, FBMainActivity.class);
+			        startActivity(intent);	   		    	  
 	   		      }
 	   		});          
             

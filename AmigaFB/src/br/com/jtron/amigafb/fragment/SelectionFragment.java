@@ -51,6 +51,7 @@ public class SelectionFragment extends Fragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater,ViewGroup container, Bundle savedInstanceState) {		
 	    super.onCreateView(inflater, container, savedInstanceState);
+	    
 	    View view = inflater.inflate(R.layout.selection,container, false);	    
 	    // Find the user's profile picture custom view
 		profilePictureView = (ProfilePictureView) view.findViewById(R.id.selection_profile_pic);

@@ -18,5 +18,7 @@
     <string name="title_activity_foto_curtiu">FotoCurtiu</string>
     <string name="title_activity_escolhe_amigos">EscolheAmigosActivity</string>
     <string name="title_activity_compartilhar">CompartilharActivity</string>
+    <string name="title_activity_amigos">AmigosActivity</string>
+    <string name="title_activity_inicio">InicioActivity</string>
 
 </resources>

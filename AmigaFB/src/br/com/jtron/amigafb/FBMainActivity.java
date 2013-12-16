@@ -15,7 +15,7 @@ import com.facebook.Session;
 import com.facebook.SessionState;
 import com.facebook.UiLifecycleHelper;
 
-public class MainActivity extends FragmentActivity  {	
+public class FBMainActivity extends FragmentActivity  {	
 
 	private static final int SETTINGS = 2;
 	
@@ -51,14 +51,7 @@ public class MainActivity extends FragmentActivity  {
 	    transaction.commit();
 	    
 	    
-	    Button button1 = (Button)findViewById(R.id.btnCurtiu);			
-		 button1.setOnClickListener(new View.OnClickListener() {
-		      @Override
-		      public void onClick(View view) {
-		        Intent intent = new Intent(MainActivity.this, FotoCurtiuActivity.class);
-		        startActivity(intent);
-		      }
-		 });
+	    
 	    
 	}
 	
