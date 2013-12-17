@@ -24,7 +24,7 @@ public class FotoCurtiuActivity extends Activity {
 		
 		final Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
 		
-		Button button1 = (Button)findViewById(R.id.btnFoto);			
+		ImageView button1 = (ImageView)findViewById(R.id.imageView1);			
 		 button1.setOnClickListener(new View.OnClickListener() {
 		      @Override
 		      public void onClick(View view) {		        		    	  		    	  		    	

@@ -6,6 +6,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#FFB6C1"
     tools:context=".FotoCurtiuActivity" >
 
     <LinearLayout
@@ -21,27 +22,21 @@
         <ImageView
             android:id="@+id/imageView1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.90"
-            android:src="@drawable/ic_launcher" />
+            android:layout_height="wrap_content"         
+            android:layout_weight="0.90"   
+            android:src="@drawable/action_photo" />
 
         <LinearLayout
             android:id="@+id/fotoButtonView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <Button
+            <!-- <Button
                 android:id="@+id/btnFoto"
                 android:layout_width="114dp"
-                android:layout_height="wrap_content"                               
-                android:text="Tirar Foto" />
-            <!-- android:background="@drawable/camera"  -->
-
-            <!-- <Button
-                android:id="@+id/button1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Buscar Foto" /> -->
+                android:layout_height="wrap_content"                                
+                android:text="Tirar Foto" /> -->
+            
 
         </LinearLayout>
         
