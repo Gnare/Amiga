@@ -54,8 +54,8 @@ public class SelectionFragment extends Fragment {
 	    
 	    View view = inflater.inflate(R.layout.selection,container, false);	    
 	    // Find the user's profile picture custom view
-		profilePictureView = (ProfilePictureView) view.findViewById(R.id.selection_profile_pic);
-		profilePictureView.setCropped(true);
+		/*profilePictureView = (ProfilePictureView) view.findViewById(R.id.selection_profile_pic);
+		profilePictureView.setCropped(true);*/
 	
 		// Find the user's name view
 		userNameView = (TextView) view.findViewById(R.id.selection_user_name);
@@ -106,7 +106,7 @@ public class SelectionFragment extends Fragment {
 	                if (user != null) {
 	                    // Set the id for the ProfilePictureView
 	                    // view that in turn displays the profile picture.
-	                    profilePictureView.setProfileId(user.getId());
+	                    //profilePictureView.setProfileId(user.getId());
 	                    // Set the Textview's text to the user's name.
 	                    userNameView.setText(user.getName());
 	                }
