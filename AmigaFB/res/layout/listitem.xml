@@ -5,11 +5,11 @@
               android:layout_gravity="center_horizontal"
               android:orientation="horizontal">
 
-    <ImageView
+    <!-- <ImageView
             android:id="@+id/icon"
             android:src="@drawable/action_eating"
             android:layout_width="60dp"
-            android:layout_height="60dp" />
+            android:layout_height="60dp" /> -->
     <LinearLayout
             android:orientation="vertical"
             android:layout_gravity="center_vertical"

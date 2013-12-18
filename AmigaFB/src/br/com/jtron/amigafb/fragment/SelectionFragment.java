@@ -44,7 +44,7 @@ public class SelectionFragment extends Fragment {
 	private static final String TAG = "SelectionFragment";
 	
 	private ProfilePictureView profilePictureView;
-	private TextView userNameView;
+	//private TextView userNameView;
 	
 	private static final int REAUTH_ACTIVITY_CODE = 100;
 	
@@ -58,7 +58,7 @@ public class SelectionFragment extends Fragment {
 		profilePictureView.setCropped(true);*/
 	
 		// Find the user's name view
-		userNameView = (TextView) view.findViewById(R.id.selection_user_name);
+		//userNameView = (TextView) view.findViewById(R.id.selection_user_name);
 					
 		// Find the list view
 	    listView = (ListView) view.findViewById(R.id.selection_list);
@@ -108,7 +108,7 @@ public class SelectionFragment extends Fragment {
 	                    // view that in turn displays the profile picture.
 	                    //profilePictureView.setProfileId(user.getId());
 	                    // Set the Textview's text to the user's name.
-	                    userNameView.setText(user.getName());
+	                    //userNameView.setText(user.getName());
 	                }
 	            }
 	            if (response.getError() != null) {
@@ -342,12 +342,12 @@ public class SelectionFragment extends Fragment {
 	        BaseListElement listElement = listElements.get(position);
 	        if (listElement != null) {
 	            view.setOnClickListener(listElement.getOnClickListener());
-	            ImageView icon = (ImageView) view.findViewById(R.id.icon);
+	            //ImageView icon = (ImageView) view.findViewById(R.id.icon);
 	            TextView text1 = (TextView) view.findViewById(R.id.text1);
 	            TextView text2 = (TextView) view.findViewById(R.id.text2);
-	            if (icon != null) {
+	            /*if (icon != null) {
 	                icon.setImageDrawable(listElement.getIcon());
-	            }
+	            }*/
 	            if (text1 != null) {
 	                text1.setText(listElement.getText1());
 	            }
