@@ -22,6 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:src="@drawable/camera1"
+            android:background="@drawable/button_border"
             android:scaleType="center"
             android:layout_weight="0.50"
              />
@@ -30,6 +31,14 @@
             android:id="@+id/fotoButtonView"
             android:layout_width="match_parent"
             android:layout_height="68dp" >
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Compartilhar"
+                android:visibility="invisible"
+                android:background="@drawable/button_border" />
            
         </LinearLayout>
         

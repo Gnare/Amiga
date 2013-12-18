@@ -24,14 +24,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.50"
-            android:text="Curtiu ?" />
+            android:text="Curtiu ?" 
+            android:background="@drawable/button_border"/>
 
         <Button
             android:id="@+id/btnQual"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.50"
-            android:text="Qual ?" />
+            android:text="Qual ?" 
+            android:background="@drawable/button_border"/>
         
         </LinearLayout>
 

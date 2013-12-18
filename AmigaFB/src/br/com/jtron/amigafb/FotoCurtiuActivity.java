@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
+import android.opengl.Visibility;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.support.v4.view.ViewPager.LayoutParams;
@@ -50,26 +51,19 @@ public class FotoCurtiuActivity extends Activity {
 		if (requestCode == CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE && resultCode == RESULT_OK) {  
             Bitmap photo = (Bitmap) data.getExtras().get("data");
             
-            //LinearLayout lfoto = (LinearLayout) findViewById(R.id.linearLayout1);
             
-            Button add_btn=new Button(this);
-            add_btn.setText("Continuar");            
-            LinearLayout layout = (LinearLayout)findViewById(R.id.fotoButtonView);
+            //LinearLayout layout = (LinearLayout)findViewById(R.id.fotoButtonView);
             
-            LayoutParams params = new  LayoutParams();
-            params.height = LayoutParams.MATCH_PARENT;
-            params.width = LayoutParams.MATCH_PARENT;                                                                   
-                        
-            add_btn.setLayoutParams(params);
+            Button add_btn= (Button)findViewById(R.id.button1);//new Button(this);
             
-            layout.addView(add_btn);
+            add_btn.setVisibility(Button.VISIBLE);
             
             Drawable verticalImage = new BitmapDrawable(getResources(),photo);
             ImageView first = (ImageView) findViewById(R.id.imageView1);            
             //first.getLayoutParams().height = lfoto.getHeight();            
             //first.getLayoutParams().width = lfoto.getWidth();
             first.setScaleType(ScaleType.FIT_XY);
-            first.setImageDrawable(verticalImage);                                                
+            first.setImageDrawable(verticalImage);                     
             			
 	        add_btn.setOnClickListener(new View.OnClickListener() {
 	   		      @Override

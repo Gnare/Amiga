@@ -39,5 +39,15 @@
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:background="@drawable/button_border"/>
+    
+    
+    <Button
+        android:id="@+id/enviar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/button_border"/>
+    
+    
 
 </LinearLayout>
