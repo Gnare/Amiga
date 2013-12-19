@@ -23,7 +23,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.ImageView;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 import br.com.jtron.amigafb.PickerActivity;
@@ -38,6 +38,7 @@ import com.facebook.UiLifecycleHelper;
 import com.facebook.model.GraphObject;
 import com.facebook.model.GraphUser;
 import com.facebook.widget.ProfilePictureView;
+import com.parse.ParseObject;
 
 public class SelectionFragment extends Fragment {
 	
@@ -51,8 +52,21 @@ public class SelectionFragment extends Fragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater,ViewGroup container, Bundle savedInstanceState) {		
 	    super.onCreateView(inflater, container, savedInstanceState);
+	    	    
 	    
 	    View view = inflater.inflate(R.layout.selection,container, false);	    
+	    
+	    Button enviar = (Button) view.findViewById(R.id.enviar);
+	    
+	    enviar.setOnClickListener(new View.OnClickListener() {
+		      @Override
+		      public void onClick(View view) {
+		    	  ParseObject testObject = new ParseObject("TestObject");
+		    	  testObject.put("foo", "bar");
+		    	  testObject.saveInBackground();
+		      }
+		 });	    
+	    
 	    // Find the user's profile picture custom view
 		/*profilePictureView = (ProfilePictureView) view.findViewById(R.id.selection_profile_pic);
 		profilePictureView.setCropped(true);*/
@@ -82,14 +96,11 @@ public class SelectionFragment extends Fragment {
 	    
 
 	    // Check for an open session
-	    Session session = Session.getActiveSession();
-	    
+	    Session session = Session.getActiveSession();	    
 	    if (session != null && session.isOpened()) {
 	        // Get the user's data
 	        makeMeRequest(session);
-	    }
-	    
-	    
+	    }	    	   
 	    
 	    return view;
 	}
@@ -356,7 +367,7 @@ public class SelectionFragment extends Fragment {
 	            }
 	        }
 	        return view;
-	    }
+	    }	    
 
 	}
 	
